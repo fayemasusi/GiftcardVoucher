@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Email Notification Activity</title>
+<style type="text/css">
+.signup-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f2f2;
+  border-radius: 5px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background: #45a049;
+}
+</style>
+</head>
+<body>
+<center>
+	<h1>Gift Card Voucher</h1>
+	<h3>Congratulations! You have won <i> $500 </i> gift card.</h3>
+	<img src="card.jpeg" style="width: 100%; height: 100%">
+</center>
+<p>Please fill up the form to claim the reward.</p> 
+<form action="process_signup.php" method="POST" class="signup-form">
+  <h2>Form</h2>
+  
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  
+  <div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  
+  <div class="form-group">
+    <input type="submit" value="Submit">
+  </div>
+</form>
+</body>
+</html>
